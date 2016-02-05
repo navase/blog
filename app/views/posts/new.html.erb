@@ -1,0 +1,17 @@
+<h1>New Post</h1>
+
+<%= form_for(@post, url: '/posts') do |f| %>
+  <div>
+    <p><%= f.label :title %></p>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <p><%= f.label :body %></p>
+    <%= f.text_area :body %>
+  </div>
+
+  <div>
+    <%= f.submit "Save Post" %>
+  </div>
+<% end %>
