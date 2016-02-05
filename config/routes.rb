@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   post '/posts' => 'posts#create'
   get 'posts/:id' => 'posts#show', as: :post
   get 'posts.edit/:id' => 'posts#edit', as: :edit_post
-  patch 'posts/:id' => 'posts#update', as: :update_post 
+  patch 'posts/:id' => 'posts#update', as: :update_post
+  delete 'posts/:id' => 'posts#destroy', as: :destroy_post 
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
