@@ -1,7 +1,5 @@
-
-
 <% @posts.each do |post| %>
-  <article class="post">
+  <article class="text" class="post">
     <h2><%= link_to post.title, post %></h2>
     <p><%= post.body %></p>
   </article>
